@@ -1,3 +1,4 @@
+/* Responsive design media queries */
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -43,7 +44,6 @@
         margin-top: 0;
     }
 }
-
 
 @media screen and (max-width: 600px) {
     #contact,footer {
@@ -94,4 +94,100 @@
     .text-container {
         text-align: justify;
     }
+}
+
+/* Add the animation keyframes */
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); /* Reduced the height of the jump */
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the middle section name */
+.title .jump {
+    display: inline-block;
+    animation: jump 2s infinite;
+}
+
+.title .jump:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.title .jump:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.title .jump:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.title .jump:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.title .jump:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.title .jump:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.title .jump:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.title .jump:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.title .jump:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.title .jump:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.title .jump:nth-child(11) {
+    animation-delay: 1.1s;
+}
+
+.title .jump:nth-child(12) {
+    animation-delay: 1.2s;
+}
+
+.title .jump:nth-child(13) {
+    animation-delay: 1.3s;
+}
+
+.title .jump:nth-child(14) {
+    animation-delay: 1.4s;
+}
+
+.title .jump:nth-child(15) {
+    animation-delay: 1.5s;
+}
+
+
+/* Cursor effect */
+.title .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: black;
+    animation: blink 1s infinite;
+    margin-left: 2px;
 }
